@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#000000" />
+<meta property="og:description" content="By H3cke5">
+<meta property="og:type" content="website" />
+<meta property="og:image" content="attachments/1119941745900269630/1142739437931999343/image-removebg-preview_6.png" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="attachments/1119941745900269630/1142740306429751336/image-removebg-preview_7.png" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+<link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+</head>
+<script>
+	function audioPlay() {
+			var audio = document.getElementById("audio");
+			audio.volume = 0.9;
+            audio.currentTime = 1;
+			audio.play();
+	}
+</script>
+<audio loop preload="auto" id="audio">
+<source src="./assets/musica.mp3" audio mpeg">
+</audio>
+<input type="checkbox" autocomplete="off" id="overlay-toggle">
+<div class="overlay fullscreen">
+<label for="overlay-toggle" onclick="audioPlay(); ">
+<span class="overlayno-hover hover" style="font-family: monospace; font-size: 0.6em;">Fala Baixo Negue ( Clique Em Qualquer Parte Da Página )</span>
+<span class="overlayhover hover" style="font-family: monospace; font-size: 0.6em;">Fala Baixo Negue ( Clique Em Qualquer Parte Da Página )</</span>
+</label>
+</div>
+<body>
+
+<div class="card-container">
+<div class="card nitro-card">
+<div class="card-header">
+<div style="background: url('assets/attachments/banner.gif')" class="banner-img"></div>
+</div>
+<div class="card-body">
+<div class="profile-header">
+<div class="profil-logo">
+<img src="assets/attachments/avatar.gif" />
+</div>
+<div class="badges-container">
+<div class="badge-item">
+<img src="assets/badges/discordnitro.svg" alt />
+<div class="tooltip tooltip-up">Assinante Desde 2 De Set. de 1945</div>
+</div>
+<div class="badge-item">
+<img src="assets/badges/discordboost1.svg" alt />
+<div class="tooltip tooltip-up">
+Impulsionando O Servidor Desde 11 De Set. De 2001
+</div>
+</div>
+</div>
+</div>
+<div class="profile-body">
+<div class="username">
+! By H3cke5<span></span><br>
+</div>
+<hr/>
+<div class="basic-infos">
+<div class="category-title">SOBRE MIM</div>
+<p>
+https://h3cke5.website
+https://discord.gg/amathyzin<br/>
+</p>
+</div>
+<div class="basic-infos">
+<div class="category-title">MEMBRO DISCORD DESDE</div>
+<p>2 De Dez. De 1294</p>
+</div>
+<div class="note">
+<div class="category-title">NOTA:</div>
+<textarea placeholder="Clique Para Adicionar Uma Nota"></textarea>
+</div>
+<div class="message">
+<input type="text" placeholder="Conversar Com @H3cke5" />
+</div>
+</div>
+</div>
+</div>
+<script defer src="beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"815a78f0cb5f48d0","version":"2023.8.0","b":1,"token":"5c25a9b5d5cd4a0b8477f4bba4ae6c72","si":100}' crossorigin="anonymous"></script>
+</body>
+<script>
+    var rev = "fwd";
+       function titlebar(val){
+           var msg  = "H3cke5 The King";
+           var res = " ";
+           var speed = 100;
+           var pos = val;
+           msg = ""+msg+"";
+           var le = msg.length;
+           if(rev == "fwd"){
+               if(pos < le){
+                   pos = pos+1;
+                   scroll = msg.substr(0,pos);
+                   document.title = scroll;
+                   timer = window.setTimeout("titlebar("+pos+")",speed);
+               }
+               else {
+                   rev = "bwd";
+                   timer = window.setTimeout("titlebar("+pos+")",speed);
+               }
+           }
+           else {
+               if(pos > 0) {
+                   pos = pos-1;
+                   var ale = le-pos;
+                   scrol = msg.substr(ale,le);
+                   document.title = scrol;
+                   timer = window.setTimeout("titlebar("+pos+")",speed);
+               }
+               else {
+                   rev = "fwd";
+                   timer = window.setTimeout("titlebar("+pos+")",speed);
+               }
+           }
+       }
+       titlebar(0);
+       </script>
+</html> 
